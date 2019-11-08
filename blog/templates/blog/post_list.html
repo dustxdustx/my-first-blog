@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
-<head>
+ <head>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 	<title>hi! this is test.</title>
 
 </head>
@@ -14,7 +16,7 @@
 		<em>{{post.text|linebreaksbr}}</em><br>
 
 		{% endfor %}</div>
-	<a href="admin">数据库管理</a>
+	<h1><a href="admin">数据库管理</a></h1>
 
 </body>
 </html>
