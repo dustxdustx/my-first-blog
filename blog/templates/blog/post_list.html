@@ -6,6 +6,13 @@
 </head>
 <body>
 	<p> <h1><strong>这是个测试网页！<br> 哈哈</strong></h1></p>
+	<div><h2>{{posts}}</h2></div>
+	<div>{% for post in posts %}
+		<h3>{{post}}</h3><br>
+		<em>{{post.text|linebreaksbr}}</em><br>
+
+		{% endfor %}</div>
 	<a href="admin">数据库管理</a>
+
 </body>
 </html>
