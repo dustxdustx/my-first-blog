@@ -10,6 +10,11 @@ body {
 	padding: 20px 20px 20px 40px;
 .post {
 	margin-bottom: 70x;
+.date {
+		float: right;
+        color: #828282;
+
+}
 
 }
 }
