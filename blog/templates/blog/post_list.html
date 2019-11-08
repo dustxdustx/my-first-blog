@@ -12,10 +12,16 @@
 	<p> <h1><strong>这是个测试网页！<br> 哈哈</strong></h1></p>
 	<div><h2>{{posts}}</h2></div>
 	<div>{% for post in posts %}
-		<h3>{{post}}</h3><br>
-		<em>{{post.text|linebreaksbr}}</em><br>
-
-		{% endfor %}</div>
+		<div> class="page-header">
+		<h3>標題：{{post.title}}</h3><br>
+		</div>
+		<div> class="post">
+		<em>帖子内容：{{post.text|linebreaksbr}}</em><br>
+		創建時間：{{post.created_date}}<br>
+		發佈時間：{{post.published_date}}<br>
+		{% endfor %}
+    	</div>
+    </div>
 	<h1><a href="admin">数据库管理</a></h1>
 
 </body>
