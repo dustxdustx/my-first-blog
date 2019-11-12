@@ -1,7 +1,6 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-	<p> <h1><strong>測試Bog頁面！</strong></h1></p>
-	<div><h2>{{posts}}</h2></div>
+
 	<div>{% for post in posts %}
 		<div> class="page-header">
 		<h3>帖子標題：<a href="{% url 'post_detail' pk=post.pk %}"> {{post.title}}</a></h3><br>
