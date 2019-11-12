@@ -4,15 +4,16 @@
 		<div><h2>{{posts}}</h2>
 		</div>
 		<div class="post" >
-			<div> class="page-header">
+			<div class="page-header">
 			<h3>帖子標題：<a href="/"> {{post.title}}</a></h3><br>
 				{% if post.published_date %}
 				<div class=date>
-					{{post.published_date}}
+					发布时间：{{post.published_date}}
 				</div>
 				{% endif %}
-
-				<p> {{post.text|linebreaksbr}}</p>
+				<div class="body">
+					<p>帖子内容：<br> {{post.text|linebreaksbr}}</p>
+				</div>
 			</div>
 	    </div>
 		
