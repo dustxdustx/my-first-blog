@@ -1,6 +1,5 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-<body>
 	<p> <h1><strong>測試Bog頁面！</strong></h1></p>
 	<div><h2>{{posts}}</h2></div>
 	<div>{% for post in posts %}
@@ -16,6 +15,5 @@
 		{% endfor %}
     	</div>
     </div>
-	<h1><a href="admin">数据库管理</a></h1>
 {% endblock %}
-</body>
+
